@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+
+# Virtual environment
+.venv/
+
+# Backup files
+*.bak
+
+# Data files
+*.xls
+*.pdf
+*.csv
+*.json
+*.txt
