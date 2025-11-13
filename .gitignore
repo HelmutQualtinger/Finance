@@ -11,10 +11,3 @@ __pycache__/
 
 # Backup files
 *.bak
-
-# Data files
-*.xls
-*.pdf
-*.csv
-*.json
-*.txt
