@@ -32,7 +32,8 @@ def plot_performance():
         title="Normalized Performance ({} to {})".format(start_date.strftime('%Y-%m-%d'), end_date.strftime('%Y-%m-%d')),
         xaxis_title="Date",
         yaxis_title="Normalized Value (CHF)",
-        xaxis_rangeslider_visible=True
+        xaxis_rangeslider_visible=True,
+        template="plotly_dark"
     )
     
     # --- Print CAGR Output ---
@@ -40,7 +41,7 @@ def plot_performance():
     for name, cagr in cagr_values.items():
         print("{}: {:.2%}".format(name.replace('_', ' '), cagr))
 
-    fig.show()
+    fig.write_html("financial_performance.html")
 
 if __name__ == '__main__':
     plot_performance()
