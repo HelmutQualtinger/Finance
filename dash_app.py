@@ -2,6 +2,7 @@ import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
 import plotly.graph_objects as go
+import pandas as pd
 from finance_analyzer import get_data, calculate_cagr
 
 # --- Initialize Dash app ---
